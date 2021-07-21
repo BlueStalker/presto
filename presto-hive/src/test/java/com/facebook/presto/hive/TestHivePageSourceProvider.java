@@ -49,6 +49,7 @@ public class TestHivePageSourceProvider
                 0,
                 10,
                 10,
+                0,
                 new Storage(
                         StorageFormat.create(config.getHiveStorageFormat().getSerDe(), config.getHiveStorageFormat().getInputFormat(), config.getHiveStorageFormat().getOutputFormat()),
                         "location",
@@ -83,6 +84,7 @@ public class TestHivePageSourceProvider
                 0,
                 10,
                 10,
+                0,
                 new Storage(
                         StorageFormat.create(config.getHiveStorageFormat().getSerDe(), config.getHiveStorageFormat().getInputFormat(), config.getHiveStorageFormat().getOutputFormat()),
                         "location",

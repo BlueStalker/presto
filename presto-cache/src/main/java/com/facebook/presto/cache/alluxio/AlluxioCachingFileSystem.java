@@ -81,7 +81,7 @@ public class AlluxioCachingFileSystem
             // FilePath is a unique identifier for a file, however it can be a long string
             // hence using md5 hash of the file path as the identifier in the cache.
             // We don't set fileId because fileId is Alluxio specific
-            FileInfo info = new FileInfo().setFileIdentifier(md5().hashString(path.toString(), UTF_8).toString())
+            FileInfo info = new FileInfo().setFileIdentifier(md5().hashString(path.toString().concat(String.valueOf(hiveFileContext.getModificationTime())), UTF_8).toString())
                     .setPath(path.toString())
                     .setFolder(false)
                     .setLength(hiveFileContext.getFileSize().get());

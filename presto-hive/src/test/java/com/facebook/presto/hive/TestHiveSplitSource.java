@@ -524,6 +524,7 @@ public class TestHiveSplitSource
                     0,
                     fileSize.toBytes(),
                     fileSize.toBytes(),
+                    0,
                     ImmutableList.of(new InternalHiveBlock(fileSize.toBytes(), ImmutableList.of())),
                     bucketNumber,
                     bucketNumber,

@@ -86,6 +86,7 @@ public class TestHiveSplit
                 42,
                 87,
                 88,
+                0,
                 new Storage(
                         StorageFormat.create("serde", "input", "output"),
                         "location",
